@@ -10,7 +10,6 @@ import cv2
 imagem = cv2.imread("print_magalu.JPG")
 
 path = r"C:\Users\Lucas Oliveira\AppData\Local\Programs\Tesseract-OCR"
-
 pytesseract.pytesseract.tesseract_cmd = path + r'\tesseract.exe'
 # Este CMD falar para tesseract converter a imagem em texto
 texto = pytesseract.image_to_string(imagem, lang="por")
